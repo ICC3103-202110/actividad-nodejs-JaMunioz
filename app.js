@@ -8,3 +8,5 @@ x = 1;
 //printf("%d is an integer\n",x);
 console.log(x);
 //scanf("%d",x);
+//
+//
