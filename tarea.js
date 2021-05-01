@@ -1,4 +1,4 @@
-function F(a){
+function F(a){ //Fibonacci sequence.
     if (a == 0){
         return 0;
     }
@@ -15,22 +15,22 @@ function F(a){
 }
 
 
-const readline = require('readline').createInterface({
+const readline = require('readline').createInterface({ //import for do inputs
     input: process.stdin,
     output: process.stdout
   });
    
-  readline.question('\nIngrese el numero que quiere evaluar en la secuencia de'
-  +' figonacchi: ', n => {
+  readline.question('\nType the number which you want evaluate in the '
+  +' Fibonacci sequence: ', n => { //scanf, or input.
     if (F(n) == -1){
-        console.log(`\nNo se puede hacer con numeros menores a 0.`);
+        console.log(`\nThe number can´t be under 0.`);
     }
     else{
         if (F(n) == -2){
-            console.log(`\nDebe ingresar numeros.`);
+            console.log(`\nYou must type integers, not strings.`);
         } 
         else{
-            console.log(`\nEl resultado es: ${F(n)}`);
+            console.log(`\nThe result of Fibonacci is: ${F(n)}`);
         }
     }
     readline.close();
